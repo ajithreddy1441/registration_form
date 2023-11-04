@@ -50,7 +50,7 @@ const firebaseConfig = {
       age: age,
       dob: dob,
       mobile: mobile,
-      signature:signature
+      signature:signature,
     });
   };
   
