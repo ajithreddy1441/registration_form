@@ -2,6 +2,7 @@
 const firebaseConfig = {
     apiKey: "AIzaSyDkxzebCktIUrviEtiiJ5p1NypV4uQAYa8",
     authDomain: "registration-form-7c4fe.firebaseapp.com",
+    databaseURL: "https://registration-form-7c4fe-default-rtdb.firebaseio.com",
     projectId: "registration-form-7c4fe",
     storageBucket: "registration-form-7c4fe.appspot.com",
     messagingSenderId: "78404366263",
