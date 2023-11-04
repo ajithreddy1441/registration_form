@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+    <div class="flex justify-center items-center w-screen h-screen">
+        <div class=" bg-[#ffffff] bg-opacity-20 p-3 md:p-10 rounded-2xl shadow-[#2727274b] shadow-2xl scale-75 sm:scale-90 md:scale-95 lg:scale-100" id="registrationForm">
+            <h1 class="text-center font-bold pb-4 text-2xl text-white">Registration Form</h1>
+            <div>
+                <table class="justify-center" id="registrationForm">
+                    <tr class="">
+                        <td><label for="username" class="text-sm font-bold mb-2">Username</label></td>
+                        <td class="py-1"><input type="text" id="username" name="username" class="py-1 px-2 border border-gray-300 rounded outline-none"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email" class="text-sm font-bold mb-2">Email</label></td>
+                        <td class="py-1"><input type="text" id="email" name="Email" class="py-1 px-2 border border-gray-300 rounded outline-none"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password" class="text-sm font-bold mb-2">Password</label></td>
+                        <td class="py-1"><input type="text" id="password" name="password" class="py-1 px-2 border border-gray-300 rounded outline-none"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="firstName" class="text-sm font-bold mb-2">First Name</label></td>
+                        <td class="py-1"><input type="text" id="firstName" name="firstName" class="py-1 px-2 border border-gray-300 rounded outline-none"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lastName" class="text-sm font-bold mb-2">Last Name</label></td>
+                        <td class="py-1"><input type="text" id="lastName" name="lastName" class="py-1 px-2 border border-gray-300 rounded outline-none"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender" class="text-sm font-bold mb-2">Gender</label></td>
+                        <td class="py-1"><select id="gender" name="gender" class="py-1 px-2 border border-gray-300 rounded outline-none focus:outline-none focus:shadow-outline">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="age" class="text-sm font-bold mb-2">Age</label></td>
+                        <td class="py-1"><input type="number" id="age" name="age" class="py-1 px-2 border border-gray-300 rounded outline-none"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob" class="text-sm font-bold mb-2">Date of Birth</label></td>
+                        <td class="py-1"><input type="date" id="dob" name="dob" class="py-1 px-2 border border-gray-300 rounded outline-none"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mobile" class="text-sm font-bold mb-2">Mobile Number</label></td>
+                        <td class="py-1"><input type="tel" id="mobile" name="mobile" class="py-1 px-2 border border-gray-300 rounded outline-none"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="signature" class="text-sm font-bold mb-2">Signature</label></td>
+                        <td class="py-1"><input type="file" id="signature" name="signature" class=" w-40 border border-gray-300 rounded"></td>
+                    </tr>
+                </table>
+                <div class="text-center pt-5">
+                    <button type="submit" class="bg-blue-700 text-white font-bold py-2 px-4 rounded">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
