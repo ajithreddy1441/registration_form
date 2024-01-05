@@ -1,13 +1,13 @@
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDkxzebCktIUrviEtiiJ5p1NypV4uQAYa8",
-    authDomain: "registration-form-7c4fe.firebaseapp.com",
-    databaseURL: "https://registration-form-7c4fe-default-rtdb.firebaseio.com",
-    projectId: "registration-form-7c4fe",
-    storageBucket: "registration-form-7c4fe.appspot.com",
-    messagingSenderId: "78404366263",
-    appId: "1:78404366263:web:b35bda23d2686d7d2b4232"
-  };
+  apiKey: "AIzaSyD4Xw5JcHJGhpbWbz_vzCXWFqogwtspVtQ",
+  authDomain: "form-5a3c3.firebaseapp.com",
+  databaseURL: "https://form-5a3c3-default-rtdb.firebaseio.com",
+  projectId: "form-5a3c3",
+  storageBucket: "form-5a3c3.appspot.com",
+  messagingSenderId: "274648718556",
+  appId: "1:274648718556:web:19eb45ef47e459a2f02819"
+};
   
   // initialize firebase
   firebase.initializeApp(firebaseConfig);
