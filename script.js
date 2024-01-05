@@ -12,14 +12,11 @@ const firebaseConfig = {
   // initialize firebase
   firebase.initializeApp(firebaseConfig);
   
-  // reference your database
-  var registrationFormDB = firebase.database().ref("registrationForm");
-  
+
   document.getElementById("registrationForm").addEventListener("submit", submitForm);
   
   function submitForm(e) {
     e.preventDefault();
-  
     var username = getElementVal("username");
     var email = getElementVal("email");
     var password = getElementVal("password");
@@ -30,18 +27,12 @@ const firebaseConfig = {
     var dob = getElementVal("dob");
     var mobile = getElementVal("mobile");
     var signature = getElementVal("signature");
-  
-    saveMessages(username, email, password ,firstname ,lastname ,gender ,age ,dob ,mobile ,signature);
-  
-  
-    //   reset the form
-    document.getElementById("registrationForm").reset();
+    var registrationFormDB = firebase.database().ref(username);
+    saveMessages(username, email, password ,firstname ,lastname ,gender ,age ,dob ,mobile ,signature,registrationFormDB);
   }
   
-  const saveMessages = (username, email, password, firstname, lastname, gender, age, dob, mobile, signature) => {
-    var newregistrationForm = registrationFormDB.push();
-  
-    newregistrationForm.set({
+  const saveMessages = (username, email, password, firstname, lastname, gender, age, dob, mobile, signature,registrationFormDB) => { 
+    registrationFormDB.set({
       username: username,
       email: email,
       password: password,
@@ -53,6 +44,7 @@ const firebaseConfig = {
       mobile: mobile,
       signature:signature,
     });
+      document.getElementById("registrationForm").reset();
   };
   
   const getElementVal = (id) => {
